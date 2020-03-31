@@ -1,0 +1,119 @@
+
+
+.body{
+    width:100vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+
+}
+
+ul li{
+
+    list-style-type: none;
+}
+
+.wrapper{
+    width: 100wh;
+    height: 100vh;
+}
+
+.header{
+    background-color: transparent;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header .logo img{
+    size: 200px;
+    position: absolute;
+    padding: 10px;
+
+}
+
+.menu-nav
+ul li a{
+    color: white
+}
+
+.header .container-menu{
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 20px;
+    padding-right: 40px;
+    transform: hover;
+
+
+}
+
+
+.menu-nav{
+    display: block;
+    position: right;
+
+}
+
+.menu-nav:hover .container-menu{
+    background-color: black;
+    width: 200px;
+    height: 500px;
+    display: block;
+    position: right;
+}
+
+.section-1{
+    display:flex;
+    order:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-1 .think-green{
+    display: inline-block;
+    width: 100vw;
+    height: 1000px;
+    background-image: url(../images/bg-girl.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.section-1 .think-green h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: black;
+    text-align: right;
+    position: relative;
+    top: 500px;
+}
+
+.section-2{
+    display:flex;
+    order:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2 .think-products{
+    display: inline-block;
+    width: 100vw;
+    height: 1000px;
+    background-image: url(../images/bg-products.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.section-2 .think-products h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    position: relative;
+    top:500px;
+}

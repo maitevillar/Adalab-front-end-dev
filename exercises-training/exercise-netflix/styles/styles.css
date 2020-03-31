@@ -1,0 +1,118 @@
+
+
+.logo-container img{
+width: 200px;
+}
+
+.main-menu ul li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.main-menu ul li{
+  display: inline-block;
+}
+
+.main-menu {
+  display: inline-block;
+  align-items: right;
+}
+
+.header {
+  display: flex;
+  background: rgb(0, 0, 0);
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+/*.header {
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-netflix img{
+    width: 180px;
+    padding: 3%;
+  
+  }
+  
+  .main-menu ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main-menu ul li{
+    display: inline;
+    font-family: Helvetica;
+    font-size: small;
+    margin-right: 15px;
+  }
+
+  .main {
+    background-image: url(../images/background.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*.hero-foto img{
+    display: block;
+    max-width: 1930px;
+  }*/
+/*
+  .hero{
+    background-image: url(../images/background.jpg);
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-content: center;
+    align-items: center;
+    padding-left: 25%;
+
+  }
+
+  .titulo {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+  
+  }
+
+  .seccion {
+    display: flex;
+    background-color: black;
+    height: 500px;
+  }
+/*
+  .seccion-texto{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+  }*/
+ /*
+  .seccion-texto {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    max-width: 140 px;
+    max-height: 100px;
+  
+  }*/
+/*
+  .seccion-imagen {
+    display: block;
+    background-image: url(../images/tv-netflix.png);
+    background-repeat:no repeat;
+    width: 40%;
+    height: 80%;
+    max-width: 700px;
+
+  }*/

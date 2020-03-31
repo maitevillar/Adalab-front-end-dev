@@ -1,0 +1,44 @@
+html{
+    padding-left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+label {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: grey;
+    padding: 5px;
+}
+
+form div{
+    padding: 10px 3px;
+}
+
+input{
+    border-radius: 20px;
+    height: 18px;
+    border: solid 5px rgb(202, 202, 202) ;
+    background-color: rgb(202, 202, 202) ;
+    padding: 2px;
+}
+
+.cumpleaños{
+    display: inline-block;
+}
+
+#date{
+    width: 40px;
+}
+
+#year{
+    width: 80px;
+}
+
+#user{
+    width: 350px;
+}

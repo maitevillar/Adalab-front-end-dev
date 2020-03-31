@@ -1,0 +1,121 @@
+
+
+hr {
+    width: 100%;
+    height: 0.5px;
+    background-color: #b8b8b9;
+    opacity: 70%;
+  }
+  
+  .f-wrapper {
+    background-color: white;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template: 
+
+  }
+  
+  .f-container-copy {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 20%;
+    opacity: 75%;
+    font-family: "Open Sans", sans-serif;
+    color: #b8b8b9;
+    text-align: center;
+    font-size: 85%;
+  }
+  
+  .f-container-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #54585A;
+    font-family: "Open Sans", sans-serif;
+    font-size: 82%;
+    line-height: 20px;
+    opacity: 70%;
+    padding: 0;
+  }
+  
+  .f-container-nav ul {
+    padding: 0%;
+  }
+  
+  .f-container-nav ul li {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    color: #54585A;
+    font-size: small;
+  }
+  
+  .f-container-nav ul li a {
+    color: #54585A;
+    text-decoration: none;
+  }
+  
+  .logo-adalab img {
+    margin-bottom: 40px;
+    margin-top: 30px;
+    width: 120px;
+  }
+  
+  @media all and (min-width: 768px) {
+  
+    .f-wrapper {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      height: 140px;
+    }
+  
+    .f-container-copy {
+      position: absolute;
+      text-align: left;
+      margin-left: 45px;
+    }
+  
+    .f-container-nav {
+      display: block;
+      position: absolute;
+      text-align: right;
+      right: 0;
+      margin-right: 45px;
+      margin-top: 2%;
+      margin-bottom: 1%;
+    }
+  
+    .f-container-nav ul li a {
+      font-size: 14px;
+      line-height: 30px;
+    }
+  
+    .logo-adalab img {
+      display: block;
+      position: relative;
+      text-align: left;
+      top: 15%;
+      margin-left: 45px;
+    }
+  }
+  
+  @media all and (min-width: 1200px){
+  
+    .f-wrapper {
+      
+      
+  }

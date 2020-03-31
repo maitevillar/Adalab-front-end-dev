@@ -1,0 +1,80 @@
+ul{
+    list-style-type: none;
+}
+
+a{
+ color: white;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.product-grow h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
+.green-life h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    width: 100vw;
+
+}
+
+.menu-btn{
+    display:block;
+    font-family: Courier;
+    font-size: 16px;
+}
+
+.menu-btn .main-menu a{
+    font-family: Courier;
+    color: white;
+    font-size: 16px;
+}
+
+.menu-btn .main-menu{
+    background-color: black;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(300px);
+}
+
+.header:hover .menu-btn .main-menu{
+    transform: translate(0px);
+}
+
+.product-grow{
+    background-image: url(../images/bg-girl.jpg);
+    background-repeat: no-repeat;
+    background-size: 85vh;
+    text-align: right;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+}
+
+.green-life{
+    background-image: url(../images/bg-products.jpg) ;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}

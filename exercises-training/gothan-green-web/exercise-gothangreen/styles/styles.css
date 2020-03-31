@@ -1,0 +1,49 @@
+.wrapper {
+    border: solid 1px greenyellow;
+    width: 100vw;
+}
+.header{
+    border: solid 1px greenyellow;
+    display: flex;
+    order: row;
+    background-color: transparent;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: absolute;
+
+}
+
+.header img{
+    display: inline-block;
+    width: 200px;
+}
+
+.header .menutext {
+    display: inline-block;
+    font-size: large;
+    font-family: monospace;
+    font-size: 120%;
+    color:black;
+
+}
+
+.one{
+    width: 100wh;
+    height: 50%;
+    background-image: url(../images/bg-girl.jpg) ;
+    background-size: 50%;
+    background-repeat: no-repeat; 
+}
+
+
+/*
+.two{
+    width: 100wh;
+    height: 400px;
+    background-image: url(../images/bg-products.jpg) ;
+    background-size: 98%;
+    font-family: monospace;
+}
+*/

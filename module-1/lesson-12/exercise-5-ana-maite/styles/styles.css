@@ -1,0 +1,41 @@
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-color: grey;
+    border: 1px solid grey;
+}
+  
+  .container-fluid{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: teal;
+    color: white;
+  }
+  
+  .header {
+    background-color: wheat;
+    border-color: solid 1px tomato;
+  }
+
+  .menu {
+    background-color: peru;
+    border-color: solid 1px tomato;
+    height: 50px;
+  }
+
+  .content {
+    background-color: brown;
+    border-color: solid 1px tomato;
+  }
+  .footer {
+    background-color: saddlebrown;
+    border-color: solid 1px tomato;
+  }
+  
+  
+  
+  
+  
+  

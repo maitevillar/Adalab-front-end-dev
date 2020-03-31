@@ -1,0 +1,30 @@
+
+.container-aside{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container--item {
+    border: solid 2px green;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .aside-img{
+        background-color: green;
+        width: 100px;
+        height: 50px;
+    }
+    
+    .aside-nav {
+        background-color: red;
+
+}
+}
+
+.aside-link{
+    background-color: red;
+
+}

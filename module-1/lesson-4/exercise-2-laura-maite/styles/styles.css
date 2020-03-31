@@ -1,0 +1,98 @@
+html {
+    background-color: #cecece;
+}
+
+h1 {
+    color: black;
+    font-family: Arial;
+    font-size: 36px;
+}
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 26px; 
+}
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+h3 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 18px;
+}
+p {
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 14px;
+} 
+.flex-container {
+    display: flex;
+    flex-direction: row; /*Ejercicio 2: Eje horizontal: row*/
+    flex-wrap: wrap;
+    justify-content: stretch;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(110, 110, 110);
+
+}
+
+.flex-item-1{
+    background-image: url(../images/a1.jpg);
+    background-size: 100%;
+    width: 200px;
+    height: 100px;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 90%;
+    text-align: center;
+    font-family: Helvetica;
+    border-color:  rgb(110, 110, 110);
+    border-style: solid;
+}
+
+.flex-item-2{
+    background-image: url(../images/a2.jpg);
+    background-size: 100%;
+    width: 200px;
+    height: 100px;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 90%;
+    text-align: center;
+    border-color:  rgb(110, 110, 110);
+    border-style: solid;
+    font-family: Helvetica;
+}
+.flex-item-3{
+    background-image: url(../images/a3.jpg);
+    background-size: 100%;
+    width: 200px;
+    height: 100px;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 90%;
+    text-align: center;
+    border-color: rgb(110, 110, 110);
+    border-style: solid;
+    font-family: Helvetica;
+}
+.flex-item-4{
+    background-image: url(../images/a4.gif);
+    background-size: 100%;
+    width: 200px;
+    height: 100px;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 90%;
+    text-align: center;
+    border-color: rgb(110, 110, 110);
+    border-style: solid;
+    font-family: Helvetica;
+}

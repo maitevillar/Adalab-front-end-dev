@@ -1,0 +1,17 @@
+body {
+    margin: 10px 30px;
+    background-color: grey;
+  }
+
+form {
+    color: black;
+    font-family: helvetica;
+    font-size: 14px; 
+  }
+
+input {  
+    display: block;
+    font-family: helvetica;
+    font-size: 12px;
+    margin-bottom: 10px
+    }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+
+<body>
+    <form>
+
+        <div class="nombre">
+            <label class="clase" for="firstname">Nombre</label>
+            <input placeholder="Nombre" type="text" id="firstname" name="firstname">
+            <input placeholder="Apellido" type="text" id="lastname" name="lastname">
+        </div>
+
+        <div class="usuario">
+            <label for="user"> Nombre de usuario </label>
+            <input placeholder="@gmail.com" type="email" id="user" name="nombredeusuario">
+        </div>
+
+
+        <div class="contraseña">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="contraseña">
+        </div>
+
+        <div class="cumpleaños">
+            <label for="date">Fecha de nacimiento</label>
+            <input placeholder="día" type="text" id="date" name="fecha">
+            <select id="month" name="month">
+                    <option value="Mes">Mes</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+            </select>
+            <input placeholder="Año" type="text" id="year" name="año">
+        </div>
+
+        <div class="genero"> 
+            <label for="sexo">Sexo</label>
+            <select id="sex" name="sexo">
+                    <option value="Selecciona tu genero">Selecciona tu genero</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="GNB">Genero no binario</option>
+            </select>
+        </div>
+
+        <div class="movil">
+            <label for="telephone">Teléfono móvil</label>
+            <input type="tel" id="telephone" name="móvil" value="+34" pattern="[0-9]{9}">
+        </div>
+
+        <div class="correo"> 
+            <label for="adress">Tu dirección de correo electronico actual</label>
+            <input type="email" id="adress" name="correoactual">
+        </div>
+
+        <div class="ubicacion">
+        <label for="location">Ubicación</label>
+        <select id="location" name="ubicacion">
+                <option value="España">España</option>
+                <option value="Francia">Francia</option>
+                <option value="Italia">Italia</option>
+                <option value="Otros">Otros</option>
+        </select>
+        </div>
+
+        <input class="button" type="submit" value="Siguiente paso">
+
+    </form>    
+</body>
+</html>

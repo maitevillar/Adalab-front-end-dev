@@ -1,0 +1,44 @@
+
+html {
+    background-color: #dfdfdf;
+}
+
+h1 {
+    color: black;
+    font-family: Arial;
+    font-size: 36px;
+}
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 26px; 
+}
+
+p {
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 14px;
+} 
+
+li {    
+    color: black;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+.links {
+ font-family: Helvetica;
+  border-radius: 20px;
+  color: red;
+  display: inline-block;
+  margin-bottom: 1em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+footer {
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-style: italic;
+}

@@ -1,0 +1,49 @@
+html {
+    background-color: #dfdfdf;
+}
+
+h1 {
+    color: black;
+    font-family: Arial;
+    font-size: 36px;
+}
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 26px; 
+}
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+p,
+a {
+    background-color: #A0C5E9;
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+.bloque {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+
+.inline {
+    display: inline;
+  }
+
+.inlinebloque {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+
+article {
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 14px;
+}

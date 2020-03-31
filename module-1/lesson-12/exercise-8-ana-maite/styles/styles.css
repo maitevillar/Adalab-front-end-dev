@@ -1,0 +1,44 @@
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  
+.container-fluid{
+  color: black;
+  text-align: center;
+}
+
+.header {
+  background-color: teal;
+  border: solid 2px grey;
+  height: 100px;
+}
+
+.pic-1{
+  border: solid 5px grey;
+  height: 500px;
+  background-image: url(../images/cat-1.jpg);
+  background-size: cover;
+}
+
+.pic-2{
+  border: solid 5px grey;
+  height: 500px;
+  background-image: url(../images/cat-2.jpg);
+  background-size: cover;
+}
+
+.pic-3{
+  border: solid 5px grey;
+  height: 500px;
+  background-image: url(../images/cat-3.jpg);
+  background-size: cover;
+}
+
+.pic-4{
+  border: solid 5px grey;
+  height: 500px;
+  background-image: url(../images/cat-4.jpg);
+  background-size: cover;
+}

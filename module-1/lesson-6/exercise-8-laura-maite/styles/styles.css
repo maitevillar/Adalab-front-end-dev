@@ -1,0 +1,59 @@
+html{
+    font-family: Arial;
+    color: black
+}
+
+.wrapper{
+    display:flex;
+    width: 480px;
+    height: 100%;
+    background-color: rgb(190, 190, 190);
+}
+
+
+.menu-container{
+
+    background-color: greenyellow;
+}
+
+.main-container{
+    background-color: yellow;
+}
+
+.info-container{
+    background-color: grey;
+}
+
+
+@media all and (min-width:480px) and (max-width:1000px){
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper .header{
+        display: block;
+        height: 20px;
+        width: 1000px;
+    }
+
+    .menu-container{
+        display: block;
+        height: 20px;
+        width: 25%;
+    }
+
+    .main-container{
+        display: inline-block;
+        width: 75%;
+    }
+
+    .info-container{
+        display: inline-block;
+        width: 75%;
+        margin-left:25%;
+    }
+}

@@ -1,0 +1,26 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.users-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.users-list li span{
+  display: block
+}
+
+.users-list li img{
+  width: 100%;
+  max-width: 200px;
+  min-height: 100px;
+}
+
+.users-list__item-info{
+  padding: 20px;
+}

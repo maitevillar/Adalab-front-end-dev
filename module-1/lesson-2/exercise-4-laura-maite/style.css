@@ -1,0 +1,25 @@
+
+html{
+    background-color:mediumpurple;
+}
+
+body {
+    color:rebeccapurple;
+    font-family: tahoma;
+    font-size: 18px; 
+    line-height: 1.5;
+}
+
+h1 {  
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 26px; 
+}
+
+footer {
+    font-size: 12px;
+    font-style: italic;
+}
+

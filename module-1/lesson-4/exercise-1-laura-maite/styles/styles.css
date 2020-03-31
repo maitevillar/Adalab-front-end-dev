@@ -1,0 +1,54 @@
+html {
+    background-color: #cecece;
+}
+
+h1 {
+    color: black;
+    font-family: Arial;
+    font-size: 36px;
+}
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 26px; 
+}
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+h3 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 18px;
+}
+p {
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 14px;
+} 
+.flex-container {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-direction: row; /*Ejercicio 1: Cambiar esta variable. Column/Row */
+    flex-wrap: wrap;
+    justify-content: stretch;
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+
+}
+
+.flex-item{
+    background: tomato;
+    height: auto;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 90%;
+    text-align: center;
+    border-color: blue;
+    border-style: solid;
+}

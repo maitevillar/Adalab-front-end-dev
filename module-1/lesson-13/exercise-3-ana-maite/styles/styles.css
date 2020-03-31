@@ -1,0 +1,47 @@
+body{
+    background-color: grey;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    padding-left: 5%;
+}
+
+.touch-space{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 700px;
+    border: solid 2px white;
+    position: fixed;
+    color: white;
+    
+}
+
+.instruction{
+    color: white;
+}
+
+.pop-up{
+    justify-content: space-around;
+    background: transparent;
+    width: 40%;
+    height: 10%;
+    text-align: center;
+    color: grey;
+    padding-top: 30px;
+    position: relative;
+    bottom: -400px;
+}
+
+.touch-space:hover .pop-up{
+    display: static;
+    transform: translateY(-40vh);
+    background-color: white;
+    transition-duration: 5s;
+    color:black;
+
+    
+}

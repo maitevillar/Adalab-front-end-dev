@@ -1,0 +1,30 @@
+html {
+    background-color: #dfdfdf;
+}
+
+h1 {
+    color: black;
+    font-family: Arial;
+    font-size: 36px;
+}
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 26px; 
+}
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+h3 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 18px;
+}
+p {
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 14px;
+} 

@@ -1,0 +1,38 @@
+html {
+    background-color: #dfdfdf;
+}
+
+h1 {
+    color: black;
+    font-family: Arial;
+    font-size: 36px;
+}
+
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+p {
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 14px;
+} 
+
+th {
+    color: black;
+    font-family: Helvetica;
+    font-style: oblique;
+    font-size: 14px;
+    background-color: #bebebe;
+} 
+
+td {
+    color: black;
+    font-family: Helvetica;
+    font-size: 12px;
+    text-align: center;
+    background-color: white;
+} 
+

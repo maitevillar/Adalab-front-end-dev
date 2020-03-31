@@ -1,0 +1,11 @@
+$primary-color: green;
+
+body {
+  background: $primary-color;
+}
+
+$secondary-color: rgb(233, 10, 144);
+
+main {
+  background: $secondary-color;
+}

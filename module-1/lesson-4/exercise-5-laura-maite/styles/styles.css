@@ -1,0 +1,64 @@
+html {
+    background-color: #cecece;
+}
+
+h1 {
+    color: black;
+    font-family: Arial;
+    font-size: 36px;
+}
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 26px; 
+}
+h2 {
+    color: black;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 18px;
+}
+p {
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 14px;
+} 
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+
+  .header {
+    flex: 100vh;
+    background: rgb(0, 146, 73);
+    text-align: left;
+    flex-grow: 1;
+  }
+
+  .main {
+    flex: 100vh;
+    text-align: left;
+    padding: 5px;
+    background: rgb(37, 32, 59);
+    flex-grow: max-content;
+  }
+  
+  .footer {
+    flex: 100vh;
+    background: rgb(209, 247, 106);
+    text-align: left;
+  }
+  
+ 

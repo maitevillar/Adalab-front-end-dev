@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial.scale=1.0">
+    <title>Ejercicio de evaluación intermedia</title>
+    <link rel="stylesheet" href="./styles/normalize.css"/>
+    <link rel="stylesheet" href="./styles/styles.css"/>
+  </head>
+
+<body>
+
+    <form action="/signup" method="/post">
+        <label for="firstName">Nombre</label>
+           <input  placeholder="Jon" id="firstName" type="text" name="firstName"/>
+        <label for="firstName">Apellido</label>
+           <input placeholder="Nieve" id="lastName" type="text" name="lastName"/>
+        <label for="emailAdress">Correo electronico</label>
+            <input placeholder="correo@correo.com" id="emailAdress" type="email" name="emailAdress"/>
+        <label for="adress">Calle</label>
+           <input placeholder="Avenifda america" type="text" name="adress"/>
+        <label for="city">Ciudad</label>
+            <input placeholder="Madrid" type="text" name="city"/>
+        <label for="country">Pais</label>
+           <input placeholder="España" type="text" name="country"/>
+        <label for="dni">DNI</label>
+           <input placeholder="XXXXXXXXX" type="tel" name="dni"required/>
+        <label for="Telefono">Telefono</label>
+          <input placeholder="663345789" type="tel" name="Telefono"/>
+        <label for="password">password</label>
+           <input placeholder="Contraseña"type="password" name="password"/>
+        <label for="c-password">confirm password</label>
+           <input placeholder="contraseña" type="password" name="c-password"/>
+        <input type="submit" value="Enviar info"/>
+    </form>
+
+</body>
+</html>
