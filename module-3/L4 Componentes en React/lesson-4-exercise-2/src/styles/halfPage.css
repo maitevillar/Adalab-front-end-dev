@@ -1,0 +1,11 @@
+.App {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.halfPageDiv {
+    width: 50%;
+    border: 5px solid white;
+    background-color: rgb(61, 255, 190);
+}
