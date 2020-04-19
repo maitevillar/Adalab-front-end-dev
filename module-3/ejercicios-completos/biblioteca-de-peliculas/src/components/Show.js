@@ -1,9 +1,7 @@
 import React from 'react';
 import '../stylesheets/App.css';
 
-function Show(props) {
-    console.log(props)
-  
+function Show(props) {  
     return (
       <li className="show-item">
           <img src={props.picture} alt={props.name} />

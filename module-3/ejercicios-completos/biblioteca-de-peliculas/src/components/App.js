@@ -2,7 +2,7 @@ import React from 'react';
 import '../stylesheets/App.css';
 import Showlist from './Showlist';
 import ShowDetail from './ShowDetail';
-import { Switch,Route } from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 
 class App extends React.Component {
   constructor(props) {
@@ -29,15 +29,15 @@ class App extends React.Component {
   }
 
   renderShowDetail(props){
-    console.log(props)
     const urlId = props.match.params.id;
     const showsData = this.state.shows;
-    for(let dataObj of showsData) {
-    if(dataObj.id === parseInt(urlId)) {
-    return <ShowDetail show={dataObj} />
-    }
+      for(let showObj of showsData) {
+      if(showObj.show.id === parseInt(urlId)) {
+        return <ShowDetail showItem={showObj} />
     }
   }
+  }
+  
 
   render() {
     const {shows} = this.state;
@@ -58,3 +58,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+

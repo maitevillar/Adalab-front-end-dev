@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 const Showlist = (props) => {
     const {dataList} = props
-    console.log(dataList)
   
     return (
     <div className="content-container">
@@ -20,7 +19,7 @@ const Showlist = (props) => {
       <ul className="showlist-container">
          {dataList
          .map(dataObj => 
-            <Link to={`/show/${dataObj.id}`}>
+            <Link to={`/show/${dataObj.show.id}`}>
               <Show 
               key = {dataObj.show.id}
               id = {dataObj.show.id}
