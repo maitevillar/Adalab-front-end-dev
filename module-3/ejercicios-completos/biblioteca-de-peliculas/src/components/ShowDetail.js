@@ -1,20 +1,20 @@
 import React from 'react';
-import '../stylesheets/App.css';
+import '../stylesheets/App.scss';
 
 const ShowDetail = (props) => {
   const {showItem} = props
   console.log(showItem)
     return (
-      <div className="show-card">
+      <div className="showlist-detail">
         <li className="show" id={showItem.show.id}>  
-          <div className="show-image">
-            <img src={showItem.show.image.medium} alt={showItem.show.name} />
-            <h1> {showItem.show.name} </h1>
-            <h3> Score: {showItem.show.rating.average} </h3>
-            <span> Sinopsis: {showItem.show.summary} </span>
+            <img className="show__picture"src={showItem.show.image.medium} alt={showItem.show.name} />
+            <div className="show__content">
+              <h1 className="show__content--title"> {showItem.show.name} </h1>
+              <h3 className="show__content--subtitle"> Score: {showItem.show.rating.average} </h3>
+              <span className="show__content--text"> Sinopsis: {showItem.show.summary} </span>
+            </div>
             {/* falta el mapeo de los generos */}
-            <img className="big-image" src={showItem.show.image.original} alt={showItem.show.name} />
-          </div>
+            <img className="show__big-picture" src={showItem.show.image.original} alt={showItem.show.name} />
         </li>
       </div>
     );

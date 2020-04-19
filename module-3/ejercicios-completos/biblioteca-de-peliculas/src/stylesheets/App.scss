@@ -1,0 +1,65 @@
+.App {
+  background-color: lightcoral;
+
+  .content-container{
+    border: red solid 2px;
+    text-align: center;
+
+    .showlist-container{
+      border: grey 5px solid;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-start;
+
+      .show-item{
+        list-style-type: none;
+        border: green 2px solid;
+        margin: 0px 20px 20px 20px;
+        padding: 15px;
+
+        .h4{
+          background-color: lightblue;
+        }
+      }
+    }
+
+  }
+
+  .showlist-detail{
+    border: red solid 2px;
+
+    .show {
+      border: blue solid 2px;
+      list-style-type: none;
+
+      &__picture{
+        background-color: grey;
+        width: 170px;
+      }
+
+      &__content{
+        &--title{
+          background-color: grey;
+          margin: 0px;
+        }
+
+        &--subtitle{
+          background-color: grey;
+          margin: 0px;
+        }
+
+        &--text{
+          background-color: grey;
+          margin: 0px;
+        }
+      }
+
+      &__big-picture{
+       width: 300px;
+      }
+    }
+  }
+}

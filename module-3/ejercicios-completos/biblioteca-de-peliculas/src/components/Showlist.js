@@ -1,23 +1,17 @@
 import React from 'react';
-import '../stylesheets/App.css';
+import '../stylesheets/App.scss';
 import Show from './Show';
 import { Link } from 'react-router-dom';
 
 const Showlist = (props) => {
-    const {dataList} = props
+    const {dataList, isRunning} = props
   
     return (
     <div className="content-container">
         <h1> Buscador de series </h1>
-        <section className="filter-section"> 
-            {/* <label> </label>
-            <input> aqui va el input </input>
-            <label> </label>
-            <input type="radio"> Aqui el checkbox</input> */}
-        </section>
-
       <ul className="showlist-container">
          {dataList
+         .filter(dataObj => !isRunning || (isRunning && dataObj.show.status !== "Ended") )
          .map(dataObj => 
             <Link to={`/show/${dataObj.show.id}`}>
               <Show 

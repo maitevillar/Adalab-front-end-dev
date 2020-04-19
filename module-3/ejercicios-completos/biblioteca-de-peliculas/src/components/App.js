@@ -1,17 +1,20 @@
 import React from 'react';
-import '../stylesheets/App.css';
+import '../stylesheets/App.scss';
 import Showlist from './Showlist';
 import ShowDetail from './ShowDetail';
 import { Switch, Route} from 'react-router-dom';
+import Filter from './Filter';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      shows: []
+      shows: [],
+      isRunning: false
     }
     this.getDataFromApi = this.getDataFromApi.bind(this);
     this.renderShowDetail = this.renderShowDetail.bind(this);
+    this.handleCheckbox = this.handleCheckbox.bind(this);
   }
 
   componentDidMount () {
@@ -28,6 +31,15 @@ class App extends React.Component {
       });
   }
 
+
+  handleCheckbox() {
+    this.setState(prevState => {
+      return {
+        isRunning: !prevState.isRunning
+      }
+    })
+  }
+
   renderShowDetail(props){
     const urlId = props.match.params.id;
     const showsData = this.state.shows;
@@ -40,13 +52,14 @@ class App extends React.Component {
   
 
   render() {
-    const {shows} = this.state;
+    const {shows, isRunning} = this.state;
 
     return (
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <Showlist dataList={shows} />
+            <Filter handleCheckbox={this.handleCheckbox} isRunning={isRunning}/>
+            <Showlist dataList={shows} isRunning={isRunning} />
           </Route>
 
           <Route path="/show/:id" render={this.renderShowDetail}/>
