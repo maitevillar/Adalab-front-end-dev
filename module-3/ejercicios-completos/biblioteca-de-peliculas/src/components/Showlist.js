@@ -18,7 +18,7 @@ const Showlist = (props) => {
             <Link to={`/show/${dataObj.show.id}`}>
               <Show key = {dataObj.show.id}
                     id = {dataObj.show.id}
-                    picture = {dataObj.show.image}
+                    image = {dataObj.show.image}
                     name = {dataObj.show.name}
                     status = {dataObj.show.status}
                     genres = {dataObj.show.genres}

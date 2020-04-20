@@ -1,0 +1,243 @@
+.App {
+  width: 100%;
+  background-color: $lightColor;
+  padding: 70px 40px 70px 40px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tabletSize {
+    padding: 70px 140px 70px 140px;
+  }
+
+  .main-title{
+    font-size: 50px;
+    font-weight: 200;
+
+    @include tabletSize {
+      font-size: 80px;
+    }
+
+  }
+  
+  .filter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+    &--container{
+
+      &__item-1{
+        width: 300px;
+        border: 0.071rem $mainColor solid;
+        font-size: 1rem;
+        padding: 0rem 0.286rem 0rem 0.286rem;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+
+        @include tabletSize {
+          width: 400px;
+        }
+        
+        .input-1{
+          width: 130px;
+          margin: 0.429rem;
+          padding: 0.214rem;
+          border-style: none;
+          font-size: 0.80rem;
+        }
+
+        .button-1{
+          background-color: $mainColor;
+          border-style: none;
+          color: white;
+          padding: 0rem 0.714rem 0rem 0.714rem;
+          font-size: 0.80rem;
+        }
+
+        .label-2{
+          align-self: center;
+          margin-left: 0.571rem;
+          margin-right: 0.571rem;
+          font-size: 0.80rem;
+        }
+
+        .input-2{
+          align-self: center;
+          border-style: none;
+        }  
+      }
+    }
+
+    &--text{
+      text-align: center;
+      align-self: center;
+      margin-left: 1.071rem;
+      font-size: 0.75rem;
+
+    }
+  }
+
+  .highlight{
+    color: $mainColor;
+  }
+
+  .content-container{
+    padding:10px 10px;
+
+    .showlist-container{
+      margin-top: 60px;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+     
+      :hover{
+        .show-item__picture{
+          width: 91%;
+          height: 71%;      
+        }
+      }
+
+
+      .show-item{
+        list-style-type: none;
+        border: $mainColor 0.071rem solid;
+        margin: 8px;
+        padding: 0.8rem;
+        width: 200px;
+        height: 340px;
+        
+
+        @include desktopSize {
+          width: 250px;
+          height: 410px;
+        }
+  
+        &__subtitle{
+          font-weight: 400;
+          color: $mainColor;
+          font-size: 0.75rem;
+          margin-bottom: 20px;
+        }
+
+        &__title{
+          margin-bottom: 40px;
+          color: black;
+        }
+
+        &__picture{
+          width: 90%;
+          height: 70%;
+
+          &--error{
+            width: 85%;
+            height: 70%;
+            background-color: $mainColor;
+            cursor: no-drop;
+          }
+        }
+      }
+    }
+
+  }
+
+  .showlist-detail{
+    align-self: center;
+    border: $mainColor solid 0.071rem;
+    padding: 20px;
+    width: 400px;
+
+    @include tabletSize {
+      border: $mainColor solid 0.071rem;
+      padding: 40px;
+      width: 600px;
+    }
+
+    .show{
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      
+      @include tabletSize {
+        flex-direction: row;
+      }
+
+      &__content{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        
+        @include tabletSize {
+          flex-direction: row;
+        }
+
+        .show-picture{
+          width: 150px;
+          margin-right: 30px;
+
+          @include tabletSize {
+            height: 50%;
+          }
+        }
+
+        &--container{
+          font-size: 20px;
+          font-weight: 100;
+          margin-top: 10px;
+
+          @include tabletSize {
+            margin: 0px 0px 5px 0px;
+          }
+
+          .show-subtitle{
+            font-size: 16px;
+            color: $mainColor;
+            margin-bottom: 20px;
+          }
+        }
+
+        &--text{
+          line-height: 16px;
+          text-align: justify;
+          font-size: 12px;
+          margin: 0px 0px 20px 0px ;
+          font-weight: 400;
+        }
+
+        &--list{
+          display: flex;
+          flex-direction: row;
+          font-size: 12px;
+          margin: 20px 0px 20px 0px ;
+          font-weight: 400;
+
+          .list-item{
+            display: inline-block;
+            margin: 4px;
+            color: $mainColor;
+          }
+        }
+      }
+
+      &__big-picture{
+       width: 350px;
+
+       @include tabletSize {
+        width: 340px;
+        position: relative;
+        left: 175px;
+      }
+
+      }
+    }
+  }
+}

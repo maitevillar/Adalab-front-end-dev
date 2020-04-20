@@ -40,7 +40,6 @@ class App extends React.Component {
 
   submitSearch(event){
     event.preventDefault();
-    alert(`You have choosen: + ${this.state.value}`)
   }
 
   handleCheckbox() {
@@ -69,7 +68,7 @@ class App extends React.Component {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <h1> Series search engine </h1>
+            <h1 className="main-title"> TV series finder </h1>
             <Filter handleInputValue={this.handleInputValue}
                     submitSearch={this.submitSearch}
                     value={value}
