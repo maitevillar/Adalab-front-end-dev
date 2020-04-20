@@ -1,8 +1,8 @@
 import React from 'react';
-import '../stylesheets/App.scss';
+import '../scss/App.scss';
 import Showlist from './Showlist';
 import ShowDetail from './ShowDetail';
-import { Switch, Route} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Filter from './Filter';
 
 class App extends React.Component {
@@ -10,11 +10,14 @@ class App extends React.Component {
     super(props);
     this.state = {
       shows: [],
-      isRunning: false
+      isRunning: false,
+      value: ''
     }
     this.getDataFromApi = this.getDataFromApi.bind(this);
     this.renderShowDetail = this.renderShowDetail.bind(this);
     this.handleCheckbox = this.handleCheckbox.bind(this);
+    this.handleInputValue = this.handleInputValue.bind(this);
+    this.submitSearch = this.submitSearch.bind(this);
   }
 
   componentDidMount () {
@@ -23,7 +26,7 @@ class App extends React.Component {
 
   getDataFromApi() {
     // hacemos la llamada al servidor
-    fetch(`http://api.tvmaze.com/search/shows?q=girls`)
+    fetch(`http://api.tvmaze.com/search/shows?page=4`)
       .then(response => response.json())
       .then(responseData => {
         // y cuando responde el servidor guardamos los datos en el estado
@@ -31,6 +34,14 @@ class App extends React.Component {
       });
   }
 
+  handleInputValue(event){
+    this.setState({ value: event.target.value})
+  }
+
+  submitSearch(event){
+    event.preventDefault();
+    alert(`You have choosen: + ${this.state.value}`)
+  }
 
   handleCheckbox() {
     this.setState(prevState => {
@@ -52,18 +63,26 @@ class App extends React.Component {
   
 
   render() {
-    const {shows, isRunning} = this.state;
+    const {shows, isRunning, value} = this.state;
 
     return (
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <Filter handleCheckbox={this.handleCheckbox} isRunning={isRunning}/>
-            <Showlist dataList={shows} isRunning={isRunning} />
+            <h1> Buscador de series </h1>
+            <Filter handleInputValue={this.handleInputValue}
+                    submitSearch={this.submitSearch}
+                    value={value}
+                    handleCheckbox={this.handleCheckbox} 
+                    isRunning={isRunning}
+            />
+            <Showlist dataList={shows} 
+                      isRunning={isRunning} 
+            />
           </Route>
-
-          <Route path="/show/:id" render={this.renderShowDetail}/>
-
+          <Route path="/show/:id" 
+                 render={this.renderShowDetail}
+          />
         </Switch>
       </div>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../stylesheets/App.scss';
+import '../scss/App.scss';
 
 const ShowDetail = (props) => {
   const {showItem} = props
@@ -13,7 +13,11 @@ const ShowDetail = (props) => {
               <h3 className="show__content--subtitle"> Score: {showItem.show.rating.average} </h3>
               <span className="show__content--text"> Sinopsis: {showItem.show.summary} </span>
             </div>
-            {/* falta el mapeo de los generos */}
+            <ul className="show-content__list" >
+              {showItem.show.genres.map((genres,index) => (
+              <li key={index}>{genres}</li>
+            ))}
+          </ul>
             <img className="show__big-picture" src={showItem.show.image.original} alt={showItem.show.name} />
         </li>
       </div>
