@@ -1,5 +1,5 @@
 import React from 'react';
-import '../scss/App.scss';
+import '../scss/main.scss';
 import Showlist from './Showlist';
 import ShowDetail from './ShowDetail';
 import { Switch, Route } from 'react-router-dom';
@@ -26,7 +26,7 @@ class App extends React.Component {
 
   getDataFromApi() {
     // hacemos la llamada al servidor
-    fetch(`http://api.tvmaze.com/search/shows?page=4`)
+    fetch(`http://api.tvmaze.com/search/shows?q=girs`)
       .then(response => response.json())
       .then(responseData => {
         // y cuando responde el servidor guardamos los datos en el estado
@@ -69,7 +69,7 @@ class App extends React.Component {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <h1> Buscador de series </h1>
+            <h1> Series search engine </h1>
             <Filter handleInputValue={this.handleInputValue}
                     submitSearch={this.submitSearch}
                     value={value}
@@ -78,6 +78,7 @@ class App extends React.Component {
             />
             <Showlist dataList={shows} 
                       isRunning={isRunning} 
+                      value={value}
             />
           </Route>
           <Route path="/show/:id" 
