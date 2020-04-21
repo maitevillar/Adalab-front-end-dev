@@ -1,12 +1,17 @@
 import React from 'react';
 import '../scss/main.scss';
+import { Link } from 'react-router-dom';
 
 const ShowDetail = (props) => {
-  const {showItem} = props
-  console.log(showItem)
+  const {dataList, showItem} = props
+  console.log(dataList)
     return (
+      <div className="showdetail-wrapper">
+      <Link to={`/#`}> <i className="return">// HOME</i> </Link>
+      <h1 className="main-title"> - {showItem.show.name} - </h1>
       <div className="showlist-detail">
-        <li className="show" id={showItem.show.id}>   
+        <div className="head-detail"> x </div>
+          <li className="show" id={showItem.show.id}>   
           <div className="show__content">
             <img className="show-picture"
                  src={showItem.show.image.medium} alt={showItem.show.name} 
@@ -36,6 +41,7 @@ const ShowDetail = (props) => {
                  alt={showItem.show.name} 
             />
         </li>
+      </div>
       </div>
     );
   }

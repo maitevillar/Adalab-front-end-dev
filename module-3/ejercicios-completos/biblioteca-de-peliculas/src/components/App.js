@@ -68,7 +68,7 @@ class App extends React.Component {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <h1 className="main-title"> TV series finder </h1>
+            <h1 className="main-title"> tv show finder </h1>
             <Filter handleInputValue={this.handleInputValue}
                     submitSearch={this.submitSearch}
                     value={value}

@@ -1,7 +1,8 @@
 .App {
   width: 100%;
+  min-width: 310px;
   background-color: $lightColor;
-  padding: 70px 40px 70px 40px;
+  padding: 20px 40px 70px 40px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -9,15 +10,23 @@
   justify-content: center;
 
   @include tabletSize {
-    padding: 70px 140px 70px 140px;
+    padding: 30px 50px 70px 50px;
+  }
+
+  @include desktopSize {
+    padding: 30px 140px 70px 140px;
   }
 
   .main-title{
+    font-family: 'Antic Didone', serif;
     font-size: 50px;
-    font-weight: 200;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: $mainColor;
+    margin-top: 30px;
 
     @include tabletSize {
-      font-size: 80px;
+      font-size: 90px;
     }
 
   }
@@ -49,7 +58,7 @@
           margin: 0.429rem;
           padding: 0.214rem;
           border-style: none;
-          font-size: 0.80rem;
+          font-size: 0.70rem;
         }
 
         .button-1{
@@ -148,16 +157,41 @@
 
   }
 
+  
+  .showdetail-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .return{
+      position: relative;
+      right: 450px;
+      text-align: left;
+      font-family: 'Montserrat', sans-serif;
+      color: $mainColor;
+      font-size: 20px;
+      font-style: normal;
+    }
+  }
+
   .showlist-detail{
     align-self: center;
     border: $mainColor solid 0.071rem;
-    padding: 20px;
-    width: 400px;
+    padding-top: 0px;
 
     @include tabletSize {
       border: $mainColor solid 0.071rem;
-      padding: 40px;
       width: 600px;
+    }
+
+    .head-detail{
+      // height: 10px;
+      border-bottom: $mainColor solid 0.071rem;
+      color: $mainColor ;
+      margin-bottom: 20px;
+      padding-right: 10px;
+      text-align: right;
+
     }
 
     .show{
@@ -165,9 +199,11 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      padding: 20px;
       
       @include tabletSize {
         flex-direction: row;
+        padding: 30px;
       }
 
       &__content{
@@ -193,9 +229,14 @@
           font-size: 20px;
           font-weight: 100;
           margin-top: 10px;
+          
+          max-width: 200px;
+          font-size: 18px;
 
           @include tabletSize {
             margin: 0px 0px 5px 0px;
+            max-width: 400px;
+            font-size: 18px;
           }
 
           .show-subtitle{
@@ -229,12 +270,12 @@
       }
 
       &__big-picture{
-       width: 350px;
+       max-width: 240px;
 
        @include tabletSize {
-        width: 340px;
         position: relative;
         left: 175px;
+        max-width: 360px;
       }
 
       }
